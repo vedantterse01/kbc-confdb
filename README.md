@@ -55,3 +55,10 @@ refrence CLI :-
 ```bash
 PS C:\Users\Acer\Desktop\jyyi> java -cp "C:\Users\Acer\Desktop\jyyi\bin;C:\Users\Acer\Desktop\jyyi\mysql-connector-j-9.0.0.jar" kbc.KBC
 ```
+
+```bash
+& "$env:JAVA_HOME\bin\javac.exe" -d bin src\kbc\*.java
+& "$env:JAVA_HOME\bin\java.exe" -cp "bin;C:\Users\ashis\OneDrive\Desktop\kbc-test1\mysql-connector-j-9.0.0.jar" kbc.KBC
+$env:JAVA_HOME = "C:\Program Files\Java\jdk-22"
+$env:Path += ";$env:JAVA_HOME\bin"
+
